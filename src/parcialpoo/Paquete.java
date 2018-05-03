@@ -10,38 +10,35 @@ package parcialpoo;
  * @author Cristian Hernandez
  */
 public class Paquete {
-    public String tipo;
-    public String Servicios;
-    public int precios;
+    public static String tipo;
+    public static String Servicios;
+    public static int precios;
 
-    public Paquete(String tipo, String Servicios, int precios) {
-        this.tipo = tipo;
-        this.Servicios = Servicios;
-        this.precios = precios;
+    public Paquete() {
     }
 
-    public String getTipo() {
+    public static String getTipo() {
         return tipo;
     }
 
-    public String getServicios() {
+    public static String getServicios() {
         return Servicios;
     }
 
-    public int getPrecios() {
+    public static int getPrecios() {
         return precios;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public static void setTipo(String tipo) {
+        Paquete.tipo = tipo;
     }
 
-    public void setServicios(String Servicios) {
-        this.Servicios = Servicios;
+    public static void setServicios(String Servicios) {
+        Paquete.Servicios = Servicios;
     }
 
-    public void setPrecios(int precios) {
-        this.precios = precios;
+    public static void setPrecios(int precios) {
+        Paquete.precios = precios;
     }
     
 }
