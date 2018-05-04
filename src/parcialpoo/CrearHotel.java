@@ -17,6 +17,39 @@ public class CrearHotel {
     
     //Metodos  
     public void Hotel(){
+        //Creando la matriz
+        String[][] Hotel = null;
+        
+        //Igualando
+        int nPisos = 6;
+        int nHabitaciones = 10;
+        
+        //Creando la matriz 
+        Hotel = new String [nPisos][nHabitaciones];
+        
+        //Nombre de habitacion
+        String Alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
+        String Nombre = "";
+        String Nombre1 = "";
+        String Numero1 = ""; 
+        int Numero = 0;
+        int Letra;
+        
+        for(int i=0; i<nPisos; i++){  //Numero de pisos
+                for(int j=0; j<nHabitaciones; j++){//Numero de habitaciones
+                    Numero = Numero + 1;
+                    Letra = (Alpha.length()-26+i);
+                    Nombre = Nombre1 + Alpha.charAt(Letra) + Numero;
+                    Hotel[i][j] = Nombre;
+                    Habitacion habitacionj = new Habitacion();
+                    System.out.print(Hotel[i][j] + " ");
+                }
+            System.out.println("");
+            }
+        
+    }
+    
+    public void AgregarPisos(){
         Scanner nP = new Scanner(System.in);
         
         //Creando la matriz
