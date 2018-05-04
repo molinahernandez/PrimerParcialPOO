@@ -5,34 +5,46 @@
  */
 package parcialpoo;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Jorge Orellana <00103717@uca.edu.sv>
  */
 public class CrearHotel {
-    private int nPisos;
-    private int nHabitaciones;
-
-    public CrearHotel(int nPisos, int nHabitaciones) {
-        this.nPisos = nPisos;
-        this.nHabitaciones = nHabitaciones;
-    }
-
-    public int getnHabitaciones() {
-        return nHabitaciones;
-    }
-
-    public void setnHabitaciones(int nHabitaciones) {
-        this.nHabitaciones = nHabitaciones;
-    }
-
-    public int getnPisos() {
-        return nPisos;
-    }
-
-    public void setnPisos(int nPisos) {
-        this.nPisos = nPisos;
-    }
+    private int Pisos;
+    private int Habitaciones;
     
-    
+    //Metodos  
+    public void Hotel(){
+        Scanner nP = new Scanner(System.in);
+        
+        //Creando la matriz
+        int Hotel [][] = null, nPisos = 0, nHabitaciones = 0;
+        int numeroP;
+        
+        //Pidiendo el numero de Pisos 
+        System.out.println("Ingrese el numero de Pisos: ");
+        numeroP = nP.nextInt();
+        
+        Scanner nH = new Scanner(System.in);
+        int numeroH;
+        
+        //Pidiendo el numero de Habitaciones
+        System.out.println("Ingrese el numero de Habitaciones por piso: ");
+        numeroH = nH.nextInt();
+        
+        
+        //Igualando
+        nPisos = numeroP;
+        nHabitaciones = numeroH;
+        
+        //Mostrando la matriz
+        for(int i=0; i<nPisos; i++){                 //Numero de pisos
+            for(int j=0; j<nHabitaciones; j++){     //Numero de habitaciones
+                System.out.print(Hotel[i][j]);
+            }
+            System.out.println("");
+        }
+    }
 }
