@@ -13,6 +13,9 @@ public class Habitacion {
     private String nombre;
     private int precio;
 
+    public Habitacion() {
+    }
+
     public Habitacion(String nombre, int precio) {
         this.nombre = nombre;
         this.precio = precio;
