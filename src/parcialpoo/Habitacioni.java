@@ -10,12 +10,12 @@ package parcialpoo;
  * @author Jorge Orellana <00103717@uca.edu.sv>
  */
 public class Habitacioni {
-    private int numero;
+    private final int nombre;
     private static int precio;
     private static String tipo="doble";
 
-    public Habitacioni(int numero) {
-        this.numero= numero;
+    public Habitacioni(int nombre) {
+        this.nombre= nombre;
     }
 
     public int getPrecio() {
