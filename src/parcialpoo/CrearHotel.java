@@ -42,14 +42,33 @@ public class CrearHotel {
         //Creando la matriz 
         Hotel = new int [nPisos][nHabitaciones];
         
+        //Nombre de habitacion
+        String Alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
+        String Alpha2 = "cdefghijklmnopqrstuvwxyz"; 
+        String Nombre = "";
+        int Numero = 0;
+        int Letra;
+        
+        //Iterador para las habitaciones
+        
+        for(int i=0;i<10;i++){
+            //Metodo de elegir letra
+            Letra = (Alpha.length()-26);
+            //Metodo del numero
+            Numero = Numero + 1;
+            Nombre = Nombre+ Alpha.charAt(Letra)+Numero;
+            System.out.println("Tu nombre de habitacion es: "+Nombre); //Nombre de la habitacion
+        }
+        
     }
     
-    public void Mostrar(){
+    /*public void Mostrar(){
             for(int i=0; i<nPisos; i++){                 //Numero de pisos
                 for(int j=0; j<nHabitaciones; j++){     //Numero de habitaciones
                 System.out.print(Hotel[i][j]);
+                Hotel[i][j] = Nombre;
                 }
             System.out.println("");
             }
-    }
+    }*/
 }
