@@ -14,8 +14,8 @@ public class Habitacionp {
     private static int precio;
     private static String tipo="simple";
 
-    public Habitacionp() {
-        
+    public Habitacionp(int numero) {
+        this.numero= numero;
     }
 
     public int getPrecio() {
