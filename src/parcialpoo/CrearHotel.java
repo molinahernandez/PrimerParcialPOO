@@ -39,12 +39,17 @@ public class CrearHotel {
         nPisos = numeroP;
         nHabitaciones = numeroH;
         
-        //Mostrando la matriz
-        for(int i=0; i<nPisos; i++){                 //Numero de pisos
-            for(int j=0; j<nHabitaciones; j++){     //Numero de habitaciones
+        //Creando la matriz 
+        Hotel = new int [nPisos][nHabitaciones];
+        
+    }
+    
+    public void Mostrar(){
+            for(int i=0; i<nPisos; i++){                 //Numero de pisos
+                for(int j=0; j<nHabitaciones; j++){     //Numero de habitaciones
                 System.out.print(Hotel[i][j]);
-            }
+                }
             System.out.println("");
-        }
+            }
     }
 }
