@@ -1,16 +1,21 @@
+
+package parcialpoo;
+
 /**
  *
  * @author david
  */
 public class Reservacion {
-    public Habitacion habitacion;
+    public Habitacionp habitacionp;
+    public Habitacioni habitacioni;
     public Paquete paquete;
     public Cliente cliente;
     public int precio;
     public Fecha fechaentrada, fechasalida;
    
-    public Reservacion(Habitacion habitacion,Paquete paquete,Cliente cliente,int precio,Fecha fechaentrada,Fecha fechasalida){
-        this.habitacion = habitacion;
+    public Reservacion(Habitacionp habitacionp,Habitacioni habitacioni,Paquete paquete,Cliente cliente,int precio,Fecha fechaentrada,Fecha fechasalida){
+        this.habitacionp = habitacionp;
+        this.habitacioni = habitacioni;
         this.paquete = paquete;
         this.cliente = cliente;
         this.precio = precio;
@@ -19,12 +24,21 @@ public class Reservacion {
 }
 
 //getters y setters
-    public Habitacion getHabitacion() {
-        return habitacion;
+
+    public Habitacionp getHabitacionp() {
+        return habitacionp;
     }
 
-    public void setHabitacion(Habitacion habitacion) {
-        this.habitacion = habitacion;
+    public void setHabitacionp(Habitacionp habitacionp) {
+        this.habitacionp = habitacionp;
+    }
+
+    public Habitacioni getHabitacioni() {
+        return habitacioni;
+    }
+
+    public void setHabitacioni(Habitacioni habitacioni) {
+        this.habitacioni = habitacioni;
     }
 
     public Paquete getPaquete() {
@@ -66,4 +80,5 @@ public class Reservacion {
     public void setFechasalida(Fecha fechasalida) {
         this.fechasalida = fechasalida;
     }
+    
 }
