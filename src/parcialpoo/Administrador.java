@@ -11,15 +11,19 @@ package parcialpoo;
  */
 public class Administrador {
     public void modificarpreciohp(int precio){
-        habitacion.modificarpreciohp;    
+        Habitacionp.setPrecio(precio);    
     }
     
     public void modificarpreciohi(int precio){
-        habitacion.modificarpreciohi;    
+        Habitacioni.setPrecio(precio);    
     }
     
     public void modificarpreciop (int precio){
-        paquete.modificarpreciop
+        Paquete.setPrecios(precio);
+    }
+    
+    public void modificarserviciosp(String servicios){
+        Paquete.setServicios(servicios);
     }
     
     public void modificarestadoh(){
