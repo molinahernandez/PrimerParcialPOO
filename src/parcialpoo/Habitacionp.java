@@ -9,16 +9,16 @@ package parcialpoo;
  *
  * @author Jorge Orellana <00103717@uca.edu.sv>
  */
-public class Habitacionp {
-    private int numero;
+public class Habitacionp extends H{
+    /*private int numero;
     private static int precio;
-    private static String tipo="simple";
+    private static String tipo="simple";*/
 
     public Habitacionp(int numero) {
-        this.numero= numero;
+        super(numero);
     }
 
-    public int getPrecio() {
+    /*public int getPrecio() {
         return precio;
     }
 
@@ -32,7 +32,7 @@ public class Habitacionp {
 
     public static void setTipo(String tipo) {
         Habitacionp.tipo = tipo;
-    }
+    }*/
     
     
     
