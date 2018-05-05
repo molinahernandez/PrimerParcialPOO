@@ -17,11 +17,11 @@ public class Hotel {
     
     public static void Crearhotel(){
     String[]Abecedario={"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
-    HashMap<String,Pisop>hotel= new HashMap<>();
+    HashMap<String,Piso>hotel= new HashMap<>();
     
 
     for(int i=0;i<6;i++){
-        Pisop piso= new Pisop(Abecedario[i]);
+        Piso piso= new Piso(Abecedario[i]);
         piso.crearpiso();
         hotel.put(Abecedario[i], piso);    
     }
