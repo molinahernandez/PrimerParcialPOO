@@ -11,7 +11,7 @@ package parcialpoo;
  */
 public class Habitacioni extends H {
     
-    public Habitacioni(int numero) {
-        super(numero);
+    public Habitacioni(int numero, String estado) {
+        super(numero, estado);
     }
 }
