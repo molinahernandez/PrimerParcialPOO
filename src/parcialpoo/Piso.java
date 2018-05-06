@@ -14,6 +14,8 @@ import java.util.HashMap;
 public class Piso {
     private String letra;
     
+    public HashMap<Integer, H>piso= new HashMap<>();
+    
     public Piso(String letra){
         this.letra= letra;
     }
@@ -22,16 +24,19 @@ public class Piso {
         this.letra= letra;
     }
     
+    public String GetLetra(){
+        return letra;
+    }
+    
     public void crearpiso(){
-        HashMap<Integer, H>piso= new HashMap<>();
         
         for(int i=1;i<=5;i++){
             
-            Habitacioni habitacion= new Habitacioni((i*2)-1);
+            Habitacioni habitacion= new Habitacioni((i*2)-1, "Disponible");
             piso.put((i*2)-1, habitacion);
             
-            Habitacionp habitacion1= new Habitacionp(i*2);
-            piso.put((i*2),habitacion);
+            Habitacionp habitacion1= new Habitacionp(i*2, "Disponible");
+            piso.put((i*2),habitacion1);
         }
     }
 }
