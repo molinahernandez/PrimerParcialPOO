@@ -11,14 +11,16 @@ package parcialpoo;
  */
 public class H {
     protected int numero;
+    protected String estado;
     protected static int precio;
-    protected static String tipo;
+    //protected static String tipo;
 
-    public H(int numero) {
+    public H(int numero, String estado) {
         this.numero= numero;
+        this.estado= estado;
     }
 
-    public int getPrecio() {
+    public static int getPrecio() {
         return precio;
     }
 
@@ -26,11 +28,11 @@ public class H {
         H.precio = precio;
     }
 
-    public String getTipo() {
+    /*public String getTipo() {
         return tipo;
-    }
+    }*/
 
-    public static void setTipo(String tipo) {
+    /*public static void setTipo(String tipo) {
         H   .tipo = tipo;
-    }
+    }*/
 }
