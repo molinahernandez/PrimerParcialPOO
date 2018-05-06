@@ -13,13 +13,12 @@ import java.util.Scanner;
  * @author Ivan Lopez
  */
 public class Hotel {
-    
+    protected static HashMap<String,Piso>hotel= new HashMap<>();
+    private static String[] Abecedario={"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
+    private String letra;
     
     public static void Crearhotel(){
-    String[]Abecedario={"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
-    HashMap<String,Piso>hotel= new HashMap<>();
     
-
     for(int i=0;i<6;i++){
         Piso piso= new Piso(Abecedario[i]);
         piso.crearpiso();
@@ -27,5 +26,10 @@ public class Hotel {
     }
     }
     
-    
+    public static void añadirpiso(String letra){
+        System.out.println("que letra quiere ingresar");
+        Piso piso= new Piso(letra);
+        piso.crearpiso();
+        hotel.put(letra,piso);
+    }
 }
