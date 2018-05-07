@@ -9,7 +9,7 @@ package parcialpoo;
  *
  * @author Ivan Lopez
  */
-public class Habitacionp extends H{
+public class Habitacionp extends Habitacion{
     
     public Habitacionp(int numero, String estado) {
         super(numero, estado);
