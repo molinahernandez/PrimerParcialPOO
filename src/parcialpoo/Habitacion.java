@@ -10,32 +10,42 @@ package parcialpoo;
  * @author Jorge Orellana <00103717@uca.edu.sv>
  */
 public class Habitacion {
-    private String nombre;
-    private int precio;
+    private int Numero;
+    private String Estado;
+    private static int Precio;
 
     public Habitacion() {
     }
-
-    public Habitacion(String nombre, int precio) {
-        this.nombre = nombre;
-        this.precio = precio;
+    
+    public Habitacion(int Numero, String Estado) {
+        this.Numero = Numero;
+        this.Estado = Estado;
+    }
+    
+    public void setNumero(int Numero) {
+        this.Numero = Numero;
+    }
+    
+    public void setEstado(String Estado) {
+        this.Estado = Estado;
+    }
+    
+    public static void setPrecio(int aPrecio) {
+        Precio = aPrecio;
+    }
+    
+    public int getNumero() {
+        return Numero;
     }
 
-    public int getPrecio() {
-        return precio;
+    public String getEstado() {
+        return Estado;
     }
 
-    public void setPrecio(int precio) {
-        this.precio = precio;
+    public static int getPrecio() {
+        return Precio;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
     
     
     
