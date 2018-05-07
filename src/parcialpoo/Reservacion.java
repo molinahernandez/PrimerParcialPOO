@@ -13,7 +13,10 @@ public class Reservacion {
     public Cliente cliente;
     public int precio;
     public Fecha fechaentrada, fechasalida;
-   
+
+    public Reservacion() {
+    }
+    
     public Reservacion(Habitacionp habitacionp,Habitacioni habitacioni,String tipopaquete,Cliente cliente,int precio,Fecha fechaentrada,Fecha fechasalida, String serviciospaquete){
         this.habitacionp = habitacionp;
         this.habitacioni = habitacioni;
@@ -89,6 +92,18 @@ public class Reservacion {
 
     public void setServiciospaquete(String serviciospaquete) {
         this.serviciospaquete = serviciospaquete;
+    }
+
+    void setNombres(String nextLine) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setApellidos(String nextLine) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setCarnet(String next) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
