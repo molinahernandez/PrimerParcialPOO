@@ -26,10 +26,9 @@ public class Hotel {
     }
     }
     
-    public static void añadirpiso(String letra){
-        System.out.println("que letra quiere ingresar");
-        Piso piso= new Piso(letra);
+    public static void añadirpiso(){
+        Piso piso= new Piso(Abecedario[Abecedario.length]);
         piso.crearpiso();
-        hotel.put(letra,piso);
+        hotel.put(Abecedario[Abecedario.length], piso);
     }
 }
