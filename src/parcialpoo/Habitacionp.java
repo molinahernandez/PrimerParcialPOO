@@ -14,4 +14,8 @@ public class Habitacionp extends Habitacion{
     public Habitacionp(int numero, String estado) {
         super(numero, estado);
     }
+
+    Habitacionp(int i) {
+        
+    }
 }
