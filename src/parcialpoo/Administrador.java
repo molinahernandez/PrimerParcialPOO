@@ -5,7 +5,7 @@
  */
 package parcialpoo;
 
-import java.util.HashMap;
+/*import java.util.HashMap;*/
 import java.util.Scanner;
 
 /**
