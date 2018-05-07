@@ -49,9 +49,8 @@ public class Administrador {
         b.estado=estado;
     }
     
-    public static void agregarpiso(String letra){
-        System.out.println("que letra tendra el piso?");
-        Hotel.añadirpiso(letra);
+    public static void agregarpiso(){
+        Hotel.añadirpiso();
     }
     
     public static void crearreservacion(String nombre, String apellido, String DUI, String telefono, String tarjetacredito, String tipopaquete){
