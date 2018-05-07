@@ -23,19 +23,19 @@ public class Registro {
         
         registro.add(obj);
         
-        Scanner leer = new Scanner(System.in);
+        Scanner Leer = new Scanner(System.in);
         
         System.out.println("Ingrese la Habitacion");
         System.out.print(": ");
-        obj.setNombres(leer.nextLine());
+        obj.setNombres(Leer.nextLine());
         
         System.out.println("Ingrese el Paquete");
         System.out.print(": ");
-        obj.setApellidos(leer.nextLine());
+        obj.setApellidos(Leer.nextLine());
         
         System.out.println("Ingrese el Cliente");
         System.out.print(": ");
-        obj.setCarnet(leer.next());
+        obj.setCarnet(Leer.next());
     }
     Scanner leer = new Scanner(System.in);
     
