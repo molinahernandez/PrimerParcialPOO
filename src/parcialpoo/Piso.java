@@ -14,7 +14,7 @@ import java.util.HashMap;
 public class Piso {
     private String letra;
     
-    public HashMap<Integer, Habitacion>piso= new HashMap<>();
+    public HashMap<Integer, H>piso= new HashMap<>();
     
     public Piso(String letra){
         this.letra= letra;
