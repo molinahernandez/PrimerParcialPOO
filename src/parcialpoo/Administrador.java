@@ -42,7 +42,7 @@ public class Administrador {
     }
        
     public static void modificarestadoh(String estado, int numero, String letra){
-        H b;
+        H b; //Si H es por la clase H se debe cambiar por Habitacion
         Piso a;
         a=Hotel.hotel.get(letra);
         b=a.piso.get(numero);
