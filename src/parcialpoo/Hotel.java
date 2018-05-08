@@ -6,24 +6,25 @@
 package parcialpoo;
 
 import java.util.HashMap;
-import java.util.Scanner;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 /**
  *
- * @author Ivan Lopez
+ * @author Jorge Orellana <00103717@uca.edu.sv>
  */
 public class Hotel {
-    protected static HashMap<String,Piso>hotel= new HashMap<>();
+    public static HashMap<String,Piso>hotel= new HashMap<>();
     private static String[] Abecedario={"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
     private String letra;
     
     public static void Crearhotel(){
-    
-    for(int i=0;i<6;i++){
-        Piso piso= new Piso(Abecedario[i]);
-        piso.crearpiso();
-        hotel.put(Abecedario[i], piso);    
-    }
+        for(int i=0;i<6;i++){
+            Piso piso= new Piso(Abecedario[i]);
+            piso.crearpiso();
+            hotel.put(Abecedario[i], piso);    
+        }
     }
     
     public static void añadirpiso(){
@@ -31,4 +32,15 @@ public class Hotel {
         piso.crearpiso();
         hotel.put(Abecedario[Abecedario.length], piso);
     }
+    
+    //Aqui deberia mostrar el hotel
+    public static void MostrarHotel(){ 
+        //Se crea una variable Keys que guarde todas las key de hotel
+        Set<String> Keys = hotel.keySet();
+        
+        //Iteramos Keys para mostrar hotel
+        for(String Key:Keys){
+            System.out.println(hotel.get(Key));
+        }   
+    } 
 }
