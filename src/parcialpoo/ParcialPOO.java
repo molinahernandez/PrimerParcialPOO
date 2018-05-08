@@ -5,6 +5,8 @@
  */
 package parcialpoo;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Cristian Hernandez
@@ -19,13 +21,17 @@ public class ParcialPOO {
         CrearHotel hotel = new CrearHotel();
         
         Hotel.Crearhotel();
-        Hotel.MostrarHotel();
         
-        Administrador.crearreservacion(KeyR);
-        Administrador.MostrarReservacion();
+        int a;
+        Scanner entrada=new Scanner(System.in);
+        System.out.println("que opcion quiere?");
+        a=entrada.nextInt();
+                
         
-        Hotel.añadirpiso();
-        Hotel.MostrarHotel();
+        switch(a){
+            case 1:
+                Menu1.modificarpreciohi(KeyR);
+        }
     }
     
 }
