@@ -19,6 +19,8 @@ public class ParcialPOO {
         
         Hotel.Crearhotel();
         Hotel.MostrarHotel();
+        Hotel.añadirpiso();
+        Hotel.MostrarHotel();
     }
     
 }
