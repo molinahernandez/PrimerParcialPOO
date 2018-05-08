@@ -36,9 +36,9 @@ public class Hotel {
         nP = nPisos.nextInt();
         
         for(int i=0;i<nP;i++){
-            Piso piso= new Piso(Abecedario[i]);
+            Piso piso= new Piso(Abecedario[i+6]);
             piso.crearpiso();
-            hotel.put(Abecedario[i], piso);    
+            hotel.put(Abecedario[i+6], piso);    
         }
         
     }
