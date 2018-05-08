@@ -10,6 +10,5 @@ package parcialpoo;
  * @author Ivan Lopez
  */
 public class Paquete_S extends Paquete{
-    final String tipo="simple";
     
 }
