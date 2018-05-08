@@ -21,17 +21,11 @@ public class ParcialPOO {
         CrearHotel hotel = new CrearHotel();
         
         Hotel.Crearhotel();
+        Hotel.MostrarHotel();
+        Hotel.añadirpiso();
         
-        int a;
-        Scanner entrada=new Scanner(System.in);
-        System.out.println("que opcion quiere?");
-        a=entrada.nextInt();
-                
-        
-        switch(a){
-            case 1:
-                Menu1.modificarpreciohi(KeyR);
-        }
+        Menu1.crearreservacion(KeyR);
+        Menu1.MostrarReservacion();
     }
     
 }
