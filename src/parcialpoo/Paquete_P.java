@@ -10,6 +10,5 @@ package parcialpoo;
  * @author Ivan Lopez
  */
 public class Paquete_P extends Paquete{
-    final String tipo="premium";
     
 }
