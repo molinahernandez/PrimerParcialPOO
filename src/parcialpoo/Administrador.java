@@ -16,32 +16,35 @@ public class Administrador {
     private static Nombre nombre1;
     private static Cliente cliente;
     private static Reservacion reservacion;
+
+    public Administrador() {
+    }
      
-    public static void modificarpreciohp(int precio){
+    public void modificarpreciohp(int precio){
         Habitacionp.setPrecio(precio);
     }
     
-    public static void modificarpreciohi(int precio){
+    public void modificarpreciohi(int precio){
         Habitacioni.setPrecio(precio);    
     }
     
-    public static void modificarpreciopaqueteP (int precio){
+    public void modificarpreciopaqueteP (int precio){
         Paquete_P.setPrecios(precio);
     }
     
-    public static void modificarpreciopaqueteS (int precio){
+    public void modificarpreciopaqueteS (int precio){
         Paquete_S.setPrecios(precio);
     }
     
-    public static void modificarserviciopaqueteP (String servicio){
+    public void modificarserviciopaqueteP (String servicio){
         Paquete_P.setServicios(servicio);
     }
     
-    public static void modificarserviciopaqueteS (String servicio){
+    public void modificarserviciopaqueteS (String servicio){
         Paquete_S.setServicios(servicio);
     }
        
-    public static void modificarestadoh(String estado, int numero, String letra){
+    public void modificarestadoh(String estado, int numero, String letra){
         H b; //Si H es por la clase H se debe cambiar por Habitacion
         Piso a;
         a=HotelI.hotel.get(letra);
@@ -49,11 +52,11 @@ public class Administrador {
         b.estado=estado;
     }
     
-    public static void agregarpiso(){
+    public void agregarpiso(){
         HotelI.añadirpiso();
     }
     
-    public static void crearreservacion(String nombre, String apellido, String DUI, String telefono, String tarjetacredito, String tipopaquete){
+    public void crearreservacion(String nombre, String apellido, String DUI, String telefono, String tarjetacredito, String tipopaquete){
         nombre1.SetNombre(nombre);
         nombre1.SetApellido(apellido);
         cliente.SetNombre(nombre1);
