@@ -8,6 +8,7 @@ package parcialpoo;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.Set;
 
 /**
@@ -28,9 +29,18 @@ public class Hotel {
     }
     
     public static void añadirpiso(){
-        Piso piso= new Piso(Abecedario[Abecedario.length]);
-        piso.crearpiso();
-        hotel.put(Abecedario[Abecedario.length], piso);
+        Scanner nPisos = new Scanner(System.in);
+        int nP;
+        
+        System.out.println("Ingrese el numero de Pisos: ");
+        nP = nPisos.nextInt();
+        
+        for(int i=0;i<nP;i++){
+            Piso piso= new Piso(Abecedario[i]);
+            piso.crearpiso();
+            hotel.put(Abecedario[i], piso);    
+        }
+        
     }
     
     //Aqui deberia mostrar el hotel
@@ -38,9 +48,19 @@ public class Hotel {
         //Se crea una variable Keys que guarde todas las key de hotel
         Set<String> Keys = hotel.keySet();
         
+        Piso a;
+        
+        H b;
+        
         //Iteramos Keys para mostrar hotel
         for(String Key:Keys){
-            System.out.println(hotel.get(Key));
-        }   
+            for(int i=1; i<=10; i++){
+                a = hotel.get(Key);
+                b = a.piso.get(i);
+                System.out.print(a.GetLetra()+""+b.numero+"  ");
+            }
+            System.out.println("");
+        }
+        
     } 
 }
