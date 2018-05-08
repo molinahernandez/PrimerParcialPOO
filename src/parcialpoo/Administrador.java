@@ -44,13 +44,13 @@ public class Administrador {
     public static void modificarestadoh(String estado, int numero, String letra){
         H b; //Si H es por la clase H se debe cambiar por Habitacion
         Piso a;
-        a=Hotel.hotel.get(letra);
+        a=HotelI.hotel.get(letra);
         b=a.piso.get(numero);
         b.estado=estado;
     }
     
     public static void agregarpiso(){
-        Hotel.añadirpiso();
+        HotelI.añadirpiso();
     }
     
     public static void crearreservacion(String nombre, String apellido, String DUI, String telefono, String tarjetacredito, String tipopaquete){
