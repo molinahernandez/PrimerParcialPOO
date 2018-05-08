@@ -18,6 +18,13 @@ public class Cliente {
     public Cliente(){
         
     }
+
+    public Cliente(Nombre nombre, String DUI, String telefono, String tarjetacredito) {
+        this.nombre = nombre;
+        this.DUI = DUI;
+        this.telefono = telefono;
+        this.tarjetacredito = tarjetacredito;
+    }
     
     public void SetNombre(Nombre nombre){
       this.nombre= nombre;  
