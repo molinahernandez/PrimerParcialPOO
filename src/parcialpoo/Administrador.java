@@ -13,9 +13,9 @@ import java.util.Scanner;
  * @author Ivan Lopez
  */
 public class Administrador {
-    public static Nombre nombre1;
-    public static Cliente cliente;
-    public static Reservacion reservacion;
+    private static Nombre nombre1;
+    private static Cliente cliente;
+    private static Reservacion reservacion;
      
     public static void modificarpreciohp(int precio){
         Habitacionp.setPrecio(precio);
