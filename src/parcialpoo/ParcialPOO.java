@@ -17,7 +17,8 @@ public class ParcialPOO {
     public static void main(String[] args) { 
         CrearHotel hotel = new CrearHotel();
         
-        hotel.Hotel();
+        Hotel.Crearhotel();
+        Hotel.MostrarHotel();
     }
     
 }
